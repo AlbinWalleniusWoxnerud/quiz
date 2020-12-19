@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <script defer src="quiz.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <div class="start">
+        <p>In this quiz you will answer 10 questions in succession and be graded based on your results</p>
+        <p>All questions will be locked once answered</p>
+        <button type="button" onclick="random_question()">Start the Quiz</button>
+    </div>
+    <form class="formQuestions">
+        <div class="questions invisible">
+            <p class="question"></p>
+            <label>
+            <input class="option" value="1" type="radio" onchange="disable()" name="question1"> 
+            <label name="question1" class="qs1"></label>  
+            </label>
+            <br>
+            <label>
+            <input class="option" value="2" type="radio" onchange="disable()" name="question1"> 
+            <label name="question1" class="qs2"></label>  
+            </label>
+            <br>
+            <label>
+            <input class="option" type="radio" value="3" onchange="disable()" name="question1"> 
+            <label name="question1" class="qs3"></label>  
+            </label>
+            <br>
+            <label>
+            <input class="option" type="radio" value="4" onchange="disable()" name="question1"> 
+            <label name="question1" class="qs4"></label>  
+            </label>
+        </div>
+        <div class="questions invisible">
+            <p class="question"></p>
+            <label>
+            <input class="option" type="radio" value="1" onchange="disable()" name="question2"> 
+            <label name="question2" class="qs1"></label>  
+            </label>
+            <br>
+            <label>
+            <input class="option" type="radio" value="2" onchange="disable()" name="question2"> 
+            <label name="question2" class="qs2"></label>  
+            </label>
+            <br>
+            <label>
+            <input class="option" type="radio" value="3" onchange="disable()" name="question2"> 
+            <label name="question2" class="qs3"></label>  
+            </label>
+            <br>
+            <label>
+            <input class="option" type="radio" value="4" onchange="disable()" name="question2"> 
+            <label name="question2" class="qs4"></label>  
+            </label>
+        </div>
+        <div class="questions invisible">
+            <p class="question"></p>
+            <label>
+            <input class="option" type="radio" value="1" onchange="disable()" name="question3"> 
+            <label name="question3" class="qs1"></label>  
+            </label>
+            <br>
+            <label>
+            <input class="option" type="radio" value="2" onchange="disable()" name="question3"> 
+            <label name="question3" class="qs2"></label>  
+            </label>
+            <br>
+            <label>
+            <input class="option" type="radio" value="3" onchange="disable()" name="question3"> 
+            <label name="question3" class="qs3"></label>  
+            </label>
+            <br>
+            <label>
+            <input class="option" type="radio" value="4" onchange="disable()" name="question3"> 
+            <label name="question3" class="qs4"></label>  
+            </label>
+        </div>
+        <div class="questions invisible">
+            <p class="question"></p>
+            <label>
+            <input class="option" type="radio" value="1" onchange="disable()" name="question4"> 
+            <label name="question4" class="qs1"></label>  
+            </label>
+            <br>
+            <label>
+            <input class="option" type="radio" value="2" onchange="disable()" name="question4"> 
+            <label name="question4" class="qs2"></label>  
+            </label>
+            <br>
+            <label>
+            <input class="option" type="radio" value="3" onchange="disable()" name="question4"> 
+            <label name="question4" class="qs3"></label>  
+            </label>
+            <br>
+            <label>
+            <input class="option" type="radio" value="4" onchange="disable()" name="question4"> 
+            <label name="question4" class="qs4"></label>  
+            </label>
+        </div>
+        <div class="questions invisible">
+            <p class="question"></p>
+            <label>
+            <input class="option" type="radio" value="1" onchange="disable()" name="question5"> 
+            <label name="question5" class="qs1"></label>  
+            </label>
+            <br>
+            <label>
+            <input class="option" type="radio" value="2" onchange="disable()" name="question5"> 
+            <label name="question5" class="qs2"></label>  
+            </label>
+            <br>
+            <label>
+            <input class="option" type="radio" value="3" onchange="disable()" name="question5"> 
+            <label name="question5" class="qs3"></label>  
+            </label>
+            <br>
+            <label>
+            <input class="option" type="radio" value="4" onchange="disable()" name="question5"> 
+            <label name="question5" class="qs4"></label>  
+            </label>
+        </div>
+        <div class="questions invisible">
+            <p class="question"></p>
+            <label>
+            <input class="option" type="radio" value="1" onchange="disable()" name="question6"> 
+            <label name="question6" class="qs1"></label>  
+            </label>
+            <br>
+            <label>
+            <input class="option" type="radio" value="2" onchange="disable()" name="question6"> 
+            <label name="question6" class="qs2"></label>  
+            </label>
+            <br>
+            <label>
+            <input class="option" type="radio" value="3" onchange="disable()" name="question6"> 
+            <label name="question6" class="qs3"></label>  
+            </label>
+            <br>
+            <label>
+            <input class="option" type="radio" value="4" onchange="disable()" name="question6"> 
+            <label name="question6" class="qs4"></label>  
+            </label>
+        </div>
+        <div class="questions invisible">
+            <p class="question"></p>
+            <label>
+            <input class="option" type="radio" value="1" onchange="disable()" name="question7"> 
+            <label name="question7" class="qs1"></label>  
+            </label>
+            <br>
+            <label>
+            <input class="option" type="radio" value="2" onchange="disable()" name="question7"> 
+            <label name="question7" class="qs2"></label>  
+            </label>
+            <br>
+            <label>
+            <input class="option" type="radio" value="3" onchange="disable()" name="question7"> 
+            <label name="question7" class="qs3"></label>  
+            </label>
+            <br>
+            <label>
+            <input class="option" type="radio" value="4" onchange="disable()" name="question7"> 
+            <label name="question7" class="qs4"></label>  
+            </label>
+        </div>
+        <div class="questions invisible">
+            <p class="question"></p>
+            <label>
+            <input class="option" type="radio" value="1" onchange="disable()" name="question8"> 
+            <label name="question8" class="qs1"></label>  
+            </label>
+            <br>
+            <label>
+            <input class="option" type="radio" value="2" onchange="disable()" name="question8"> 
+            <label name="question8" class="qs2"></label>  
+            </label>
+            <br>
+            <label>
+            <input class="option" type="radio" value="3" onchange="disable()" name="question8"> 
+            <label name="question8" class="qs3"></label>  
+            </label>
+            <br>
+            <label>
+            <input class="option" type="radio" value="4" onchange="disable()" name="question8"> 
+            <label name="question8" class="qs4"></label>  
+            </label>
+        </div>
+        <div class="questions invisible">
+            <p class="question"></p>
+            <label>
+            <input class="option" type="radio" value="1" onchange="disable()" name="question9"> 
+            <label name="question9" class="qs1"></label>  
+            </label>
+            <br>
+            <label>
+            <input class="option" type="radio" value="2" onchange="disable()" name="question9"> 
+            <label name="question9" class="qs2"></label>  
+            </label>
+            <br>
+            <label>
+            <input class="option" type="radio" value="3" onchange="disable()" name="question9"> 
+            <label name="question9" class="qs3"></label>  
+            </label>
+            <br>
+            <label>
+            <input class="option" type="radio" value="4" onchange="disable()" name="question9"> 
+            <label name="question9" class="qs4"></label>  
+            </label>
+    
+        </div>
+        <div class="questions invisible">
+            <p class="question"></p>
+            <label>
+            <input class="option" type="radio" value="1" onchange="disable()" name="question10"> 
+            <label name="question10" class="qs1"></label>  
+            </label>
+            <br>
+            <label>
+            <input class="option" type="radio" value="2" onchange="disable()" name="question10"> 
+            <label name="question10" class="qs2"></label>  
+            </label>
+            <br>
+            <label>
+            <input class="option" type="radio" value="3" onchange="disable()" name="question10"> 
+            <label name="question10" class="qs3"></label>  
+            </label>
+            <br>
+            <label>
+            <input class="option" type="radio" value="4" onchange="disable()" name="question10"> 
+            <label name="question10" class="qs4"></label>  
+            </label>
+        </div>
+        <div class="invisible">
+            <p>Finish Quiz</p>
+            <button type="button" onclick="Check()">Submit</button>
+        </div>
+    </form>
+    <div class="result invisible">
+        <h2 id="results"></h2>
+        <p id="grade"></p>
+        <!-- <br>
+        <p>Redo quiz</p>
+        <button type="button" onclick="redo()">Redo</button> -->
+    </div>
+</body>
+</html>
